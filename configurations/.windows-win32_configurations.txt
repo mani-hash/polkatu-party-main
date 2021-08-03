@@ -1,0 +1,47 @@
+For windows:
+
+mail() doesn't seem to work
+
+Methods tried:
+
+1) Edit php.ini
+
+a) For uwamp on windows:
+
+   Location: uWamp\uWamp\bin\php\php-[version]\php_uwamp.ini
+
+
+b) For usbwebserver: Not known
+
+c) For wamp: Not known
+
+
+2) Try editing php.ini
+
+  a) Remove semicolon in front of sendmail_from = me@example.com
+
+  b) Edit sendmail_from:
+
+      sendmail_from = polkatu@gmail.com
+
+c) Try changing ports:
+
+   smtp_port= X
+
+  Eg: smtp_port= 2525
+
+d) Save mail logs to file:
+
+   i) remove semi colon in front mail.log = 
+   ii) Add a location (make sure web server has access to it)
+     
+     Eg: mail.log = "C:\php\logs\mail_logs.txt"
+
+   iii) If webserver doesn't have access to it try the following:
+       >>Run web server as admin
+
+         OR
+         
+       >>Right click on files -> choose properties -> and change permissions
+
+2) Alternative: use smtp to send mails

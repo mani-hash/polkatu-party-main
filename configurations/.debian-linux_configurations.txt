@@ -1,0 +1,52 @@
+For linux debian based distros:
+
+mail() function doesn't seem to work 
+
+Methods tried: 
+
+1) Download sendmail on debian: 
+
+   apt-get install sendmail
+
+  location: /usr/sbin/sendmail
+  Above location is a symbolic link to: /etc/alternatives/sendmail
+  The second location is also a symbolic link to: /usr/libexec/sendmail/sendmail
+
+2) Edit php.ini
+  
+  i) On system: 
+     location: /etc/php/[version]/[check folders]
+
+  ii) For Xampp or Lampp on linux:
+
+     location: /opt/lampp/etc/php.ini
+
+  a) remove semi_colon in front of sendmail_path = 
+
+  b) Modify sendmail_path: 
+
+     sendmail_path = "/usr/sbin/sendmail -t -i"
+
+      or
+
+     try sendmail_path = "sendmail -t -i"
+
+  c) edit /etc/hosts and remove 127.0.1.1 hostname for mail() to work faster
+          eg: 127.0.1.1       mani
+
+  d)  Save mail logs to file:
+
+     i) remove semi colon in front mail.log = 
+     ii) Add a location (make sure web server has access to it)
+     
+     Eg: mail.log = "C:/opt/lampp/logs/mails_logs.txt"
+    iii) If access is denied, enter in terminal:
+           >>chmod 777 "mail_log_filename"
+               
+               or
+
+           >>chown username "mail_log_filename"
+
+3) Alternative: use smtp to send emails
+
+

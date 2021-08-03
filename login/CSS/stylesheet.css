@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* input[type="text"], input[type="email"], input[type="password"] {
+    cursor: url("../images/blink.svg"), auto;
+} */
+
+/* cursor images for several cursor changes, remove them if they make user experience worse*/
+
+/* input[type="submit"], input[type="button"], input[type="checkbox"], #loginButton, #registerButton, #ico1, #ico2, #ico3 {
+    cursor: url('../images/pointer-svgrepo-com.svg'), auto;
+}
+
+body {
+    cursor: url("../images/cursor.svg"), auto;
+  } */
+
+
+/* Login and registration form styling */
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="submit"], input[type="button"] {
+    cursor: pointer;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    padding: 4% 0 0;
+    margin: auto;
+}
+.form-box{
+    height: 590px;
+    width: 480px;
+    position: relative;
+    background: #fff;
+    max-width: 360px;
+    margin: 6 auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.short-box{
+    height: 490px;
+    width: 480px;
+    position: relative;
+    background: #fff;
+    max-width: 360px;
+    margin: 6 auto;
+    padding: 5px;
+    overflow: hidden;
+}
+ 
+.button-box{
+    width: 220px;
+    height: 40px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none; 
+    position: relative;
+    z-index: 5;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+input[type="checkbox"] {
+    outline: none;
+}
+
+input[type="submit"] {
+    outline: none;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+}
+ 
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 112px;
+    height: 100%;
+    background: linear-gradient(to right, #ff9900, #ff3300); 
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 1s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff9900, #ff3300);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 22px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 84px;
+    position: absolute;
+}
+#login{
+    left: 50px
+}
+#register{
+    left: 450px
+}
+
+/* Styling for errors in login, registration, otp forms */
+.error {
+    color: red;
+    font-size: 13px;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    vertical-align: middle;
+    
+}
+
+/* Image displayed along with error msg*/
+.img_error {
+   height: 15px;
+   width: 15px;
+}
+
+/*OTP form css styling*/
+
+
+/* .otp-form {
+    margin-left: 30%;
+    border-style: outset;
+    border-color: black;
+    border-width: 3px;
+    width: 400px;
+} */
+
+.otp-btn{
+    width: 75%;
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #00ff62, #e5ff00);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    
+}
+
+.otp-input{
+    /* border-style: outset; */
+    top: 280px;
+    left: 26px;
+    position: absolute;
+    width: 310px;
+    height: 400px;
+    
+}
+
+.otp_input_field[type="text"] {
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.otp_form_box{
+    height: 540px;
+    width: 480px;
+    position: relative;
+    background: #fff;
+    max-width: 360px;
+    margin: 6 auto;
+    padding: 5px;
+    overflow: hidden;
+    border-style: outset;
+}
+
+.otp_input_field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+/* otp  input field placeholder styling*/
+
+.otp_input_field::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0em;
+    text-transform: none;
+    font-size: 22px;
+    text-align: center;
+     
+  }
+  
+  .otp_input_field :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0em;
+    text-transform: none;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .otp_input_field ::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0em;
+    text-transform: none;
+    font-size: 22px;
+    text-align: center;
+  }
+
+ 
+ /* OTP form image styling */
+  #otp_img {
+    position: absolute;
+	width: 60%;
+	float: left;
+	margin:20px;
+  }
+ 
+
+  /* Forgot password form styling*/
+  
+  .for-pass {
+    color: rgb(212, 63, 63);
+    font-size: 13px;
+    bottom: -27px;
+    left: 30%;
+    position: absolute;
+  }
+
+  .reset_pass_box {
+    height: 500px;
+    width: 480px;
+    position: relative;
+    background: #fff;
+    max-width: 360px;
+    margin: 6 auto;
+    padding: 5px;
+    overflow: hidden;
+    border-style: outset;
+  }
+
+  .forgot-pass {
+    position: absolute;
+	width: 50%;
+	float: left;
+    margin:20px;
+    
+  }
+
+  .mod1 {
+    top: -12px;
+    left: 17%;
+  }
+  .mod2 {
+    top: 30px;
+    left: 19%;
+  }
+
+  .mod3 {
+      top: 30px;
+      left: 20%;
+  }
+
+  .send-input {
+    
+    top: 260px;
+    left: 36px;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    
+   }
+
+   /* show password styling */
+   
+   .show_pass_login {
+    color: #777;
+    left: 10%;
+    font-size: 12px;
+    bottom:  59px;
+    position: absolute; 
+   }
+   .show_res {
+    color: #777;
+    font-size: 12px;
+    top: 129px;
+    height: 30px;
+    position: absolute;
+   }
+
+   .check-box2 {
+    margin: -12px 10px 1px 0;
+   }
+
+
+   @media screen and (max-width: 400px) {
+
+    /*Login and registration adjustment for devices with less than 400px width viewport*/
+    .short-box{
+        height: 490px;
+        width: 400px;
+        position: relative;
+        background: #fff;
+        max-width: 300px;
+        margin: 6 auto;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .form-box{
+        height: 590px;
+        width: 300px;
+        position: relative;
+        background: #fff;
+        max-width: 360px;
+        margin: 6 auto;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .input-group{
+        top: 180px;
+        position: absolute;
+        width: 220px;
+        transition: 1s;
+        margin-left: -2px;
+    }
+
+    input[name="REpassword"] + .check-box{
+        margin: 30px 10px 28px 0;
+    }
+
+    /*OTP form adjustment for devices less than 400px width viewport*/
+    
+    .otp_form_box{
+        height: 550px;
+        width: 300px;
+        position: relative;
+        background: #fff;
+        max-width: 360px;
+        margin: 6 auto;
+        padding: 5px;
+        overflow: hidden;
+        border-style: outset;
+    }
+
+    .otp-input{
+        /* border-style: outset; */
+        top: 250px;
+        left: 20px;
+        position: absolute;
+        width: 280px;
+        height: 400px;
+        
+    }
+
+    .reset_pass_box {
+        height: 500px;
+        width: 300px;
+        position: relative;
+        background: #fff;
+        max-width: 360px;
+        margin: 6 auto;
+        padding: 5px;
+        overflow: hidden;
+        border-style: outset;
+    }
+
+    .send-input {
+    
+        top: 260px;
+        left: 36px;
+        position: absolute;
+        width: 250px;
+        height: 400px;
+        
+    }
+
+    .submit-btn{
+        width: 100%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right, #ff9900, #ff3300);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+
+
+   }
+}
+   
